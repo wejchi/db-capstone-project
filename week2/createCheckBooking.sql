@@ -1,0 +1,2 @@
+CREATE PROCEDURE CheckBooking(IN bookingDate DATE, IN tableId INT)
+SELECT IF((SELECT count(*) FROM Bookings WHERE tableNumber=tableId AND date=bookingDate), 'table is booked', 'table is free') AS 'Booking status';
