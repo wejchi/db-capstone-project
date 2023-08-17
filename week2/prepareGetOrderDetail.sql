@@ -1,0 +1,1 @@
+PREPARE GetOrderDetail FROM 'SELECT id, quantity, totalCost From Orders WHERE id=?';

@@ -1,0 +1,1 @@
+CREATE SELECT max(quantity) FROM Orders;
